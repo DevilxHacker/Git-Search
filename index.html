@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- <body class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s')]"> -->
+
     <body>
         
-  
+        
+<form id="form">
     <div class="relative max-w-sm mx-auto mt-20">
-        <input class="w-full py-2 px-4 border-2 border-gray-300 rounded-md shadow-sm  type="search" placeholder="Enter Github Username">
-        <button class="absolute inset-y-0 right-0 flex items-center px-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200 ">
+        <input class="w-full py-2 px-4 border-2 border-gray-300 rounded-md shadow-sm" name="username" type="search" placeholder="Enter Github Username">
+        <button class="absolute inset-y-0 right-0 flex items-center px-4 text-gray-700 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200 " type="submit">
         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M14.795 13.408l5.204 5.204a1 1 0 01-1.414 1.414l-5.204-5.204a7.5 7.5 0 111.414-1.414zM8.5 14A5.5 5.5 0 103 8.5 5.506 5.506 0 008.5 14z" />
         </svg>
       </button>
     </div>
+</form>
 
     <div class=" flex-col border-2 border-gray-300  relative max-w-sm mx-auto mt-5 p-2">
         <div class="m-2 flex flex-row gap-2">
             <div >
-                <img class="object-scale-down rounded-md" src="assets/avatar.png" alt="">
+                <img
+                id="avatar"
+                class="w-20 rounded-md"
+                src="./assets/avatar.png"
+                alt="profile image"
+              />
             </div>
             <div class="mt-7 text-black text-stroke-gray-900">
                 <p id="username">username</p>
                 <p id="Join">Join</p>
             </div>
         </div>
-        <div class=" mt-7 m-2 flex-col bg-blue-200 rounded-md">
+        <div class=" mt-7 m-2 flex-col bg-blue-200 rounded-md p-2">
             <div class=" flex justify-evenly text-center">
-                <div><p>Repositry</p> <p>0</p> </div>
-                <div><p>Following</p> <p>0</p> </div>
-                <div><p>Followers</p> <p>0</p> </div>
+                <div ><p>Repositry</p> <p id="Repositry">0</p> </div>
+                <div><p>Following</p> <p  id="Following">0</p> </div>
+                <div ><p>Followers</p> <p id="Followers">0</p> </div>
             </div>
             
             <div></div>
@@ -55,7 +62,9 @@
             
         </div>
     </div>
+    
 
+    
     
     <script src="script.js"></script>
 </body>
